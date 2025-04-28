@@ -5,4 +5,4 @@ Développement d'un site qui répertorie les menus de restaurants gastronomiques
 
 Tu peux tester mon site en ligne en cliquant sur ce lien :
 
-[Trouver mon projet ici](https://gardienyt.github.io/ton-repository/)
+[Trouver mon projet ici](https://gardienyt.github.io/OhMyFood/)
