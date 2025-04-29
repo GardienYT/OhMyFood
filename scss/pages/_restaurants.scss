@@ -75,7 +75,7 @@
 
     /* Soulignement en vert des grands titres <h2> "Entrées - Plats - Déserts" */    
     &::after {
-      justify-self: flex-end;
+      justify-self: flex-start;
       content: "";
       overflow: visible;
       width: 3.06rem;
