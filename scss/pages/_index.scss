@@ -11,7 +11,6 @@
   position: relative;
   z-index: 1;
 
-  // Box-shadow uniquement pour les écrans <= 600px de large (téléphones)
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 
   input[type="text"] {
@@ -23,7 +22,6 @@
   }
 }
 
-// Retirer l'ombre à partir de 768px (desktop et plus grand)
 @media only screen and (min-width: 768px) {
   .localisation_container {
     box-shadow: none;
@@ -80,7 +78,6 @@
 }
 
 /*======== INDEX PAGE "RESTAURANTS" ========*/
-/* Style de l'ensemble de la section restaurants */
 .restaurants {
   @include flex(column, center, center, 1.62rem);
   padding: 3.37rem 1.09rem 4.12rem 1.09rem;
@@ -88,14 +85,12 @@
     padding-top: 1.87rem;
   }
 
-  /* Style du titre de la section "Restaurants" */
   &__title {
     padding-left: 0.18rem;
     width: 100%;
     max-width: 67.5rem;
   }
 
-  /* Style de l'ensemble du conteneur regroupant toutes les cards */
   &__block--container {
     @include flex(row, center, center, 1.12rem);
     flex-wrap: wrap;

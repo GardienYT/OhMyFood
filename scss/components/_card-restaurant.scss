@@ -3,7 +3,6 @@
 @import '../utils/mixins';
 
 /*======== CARD STYLE "RESTAURANT" ========*/
-/* Design des cards */
 .restaurant_card--info {
   @include flex ($justify: space-between, $align: center);
   margin-top: 1rem;
@@ -15,7 +14,6 @@
   overflow: hidden;
   transition: box-shadow, transform, 0.5s;
 
-  /*Animation au survole des cards */
   &:hover {
     box-shadow: 0 0.25rem 1.25rem #00000059;
     
@@ -36,14 +34,12 @@
 
   }
 
-  /* Style du conteneur d'information des cards */
   .restaurant_card--content {
     border-radius: 0.93rem;
     padding-left: 0.7rem;
     padding-bottom: 0.7rem;
     height: 100%;  
     
-    /* Style des titres <h3> d'information des cards */
     .restaurant_card--title {
       margin-top: 0.75rem;
       padding-right: 1.87rem;
@@ -52,7 +48,6 @@
       font-size: 0.95rem;
     }
 
-    /* Style des sous-titres <h3> d'information des cards */
     .restaurant_card--subtitle {
       margin-top: 0.75rem;
       font-family: $Body-font-text;
@@ -61,7 +56,6 @@
     }
   }
 
-  /* Style des conteneurs de prix */
   .restaurant_card--price {
     @include flex ($align: center);
     width: 6.25rem;
@@ -79,7 +73,6 @@
       width: 100%;
       height: 100%;
 
-      /* Style de l'icône au côté droit des prix */
       .fa-circle-check {
         color: white;
 
