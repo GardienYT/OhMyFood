@@ -8,6 +8,11 @@
   height: 3.12rem;
   margin: 0 auto;
   background-color: $Background_color-local;
+  position: relative;
+  z-index: 1;
+
+  // Box-shadow uniquement pour les écrans <= 600px de large (téléphones)
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 
   input[type="text"] {
     width: 6.81rem;
@@ -17,6 +22,15 @@
     }
   }
 }
+
+// Retirer l'ombre à partir de 768px (desktop et plus grand)
+@media only screen and (min-width: 768px) {
+  .localisation_container {
+    box-shadow: none;
+  }
+}
+
+
 
 /*======== INDEX PAGE "INFORMATION" ========*/
 .info {
